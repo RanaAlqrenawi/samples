@@ -10,15 +10,8 @@ namespace Prime.Services
             {
                 return false;
             }
+            throw new NotImplementedException("Not fully implemented.");
 
-            for (var divisor = 2; divisor <= Math.Sqrt(candidate); divisor++)
-            {
-                if (candidate % divisor == 0)
-                {
-                    return false;
-                }
-            }
-            return true;
         }
     }
 }
